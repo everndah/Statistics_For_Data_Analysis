@@ -1,0 +1,67 @@
+site_name: The Data Armory
+site_description: Simplified Statistics For Data Analysis
+
+repo_url: https://github.com/everndah/Statistics_For_Data_Analysis
+repo_name: everndah/Statistics_For_Data_Analysis
+
+theme:
+  name: material
+
+  # Pallet Color
+  palette:
+    primary: black
+
+  # Site Font
+  font:
+    text: Roboto
+
+  features:
+    - navigation.footer
+    - content.code.copy
+    - content.code.py.annotate
+    - search.suggest
+    - search.highlight
+    - toc.follow
+    - navigation.instant
+    - navigation.top
+
+extra:
+  # Social Links
+  social:
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@thedataarmory
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/TheDataArmory
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/ydC74P5saW
+
+  markdown_extensions:
+    - pymdownx.highlight:
+      anchor_linenums: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - admonition
+    - pymdownx.arithmatex:
+      generic: true
+    - footnotes
+    - pymdownx.details
+    - pymdownx.superfences
+    - pymdownx.mark
+    - attr_list
+    - pymdownx.emoji:
+      #emoji_index: !!python/name:materialx.emoji.twemoji
+      #emoji_generator: !!python/name:materialx.emoji.to_svg
+      
+plugins:
+ - mkdocs-jupyter:
+    include_source: True
+    ignore_h1_titles: True
+ - search
+nav:
+  - 00. Home: "index.md"
+  - 01. Structured and Unstructured Data: 01_Structured_and_Unstructured_Data.ipynb
+ 
+
+#Footer Copyright Info
+copyright: Copyright © 2023 The Data Armory.
+
